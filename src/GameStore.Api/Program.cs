@@ -4,6 +4,7 @@ using GameStore.Api.Features.Baskets.Authorization;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.Authorization;
+using GameStore.Api.Shared.Cdn;
 using GameStore.Api.Shared.Cors;
 using GameStore.Api.Shared.ErrorHandling;
 using GameStore.Api.Shared.FileUpload;
@@ -37,6 +38,8 @@ builder.AddGameStoreAuthorization();
 builder.Services.AddSingleton<IAuthorizationHandler, BasketAuthorizationHandler>();
 
 builder.AddGameStoreCors();
+
+builder.Services.AddSingleton<CdnUrlTransformer>();
 
 var app = builder.Build();
 

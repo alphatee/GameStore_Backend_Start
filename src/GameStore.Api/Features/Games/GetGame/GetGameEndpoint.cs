@@ -2,6 +2,7 @@ using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
+using GameStore.Api.Shared.Cdn;
 using Microsoft.Data.Sqlite;
 
 namespace GameStore.Api.Features.Games.GetGame;
@@ -14,6 +15,7 @@ public static class GetGameEndpoint
         app.MapGet("/{id}", async (
             Guid id,
             GameStoreContext dbContext,
+            CdnUrlTransformer cdnUrlTransformer,
             ILogger<Program> logger) =>
         {
             Game? game = await dbContext.Games.FindAsync(id);
@@ -26,7 +28,7 @@ public static class GetGameEndpoint
                                     game.Price,
                                     game.ReleaseDate,
                                     game.Description,
-                                    game.ImageUri,
+                                    cdnUrlTransformer.TransformToCdnUrl(game.ImageUri),
                                     game.LastUpdatedBy
                                 ));
         })

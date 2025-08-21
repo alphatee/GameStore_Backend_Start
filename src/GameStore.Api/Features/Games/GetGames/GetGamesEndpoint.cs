@@ -1,4 +1,5 @@
 using GameStore.Api.Data;
+using GameStore.Api.Shared.Cdn;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameStore.Api.Features.Games.GetGames;
@@ -10,7 +11,8 @@ public static class GetGamesEndpoint
         // GET /games
         app.MapGet("/", async (
             GameStoreContext dbContext,
-            [AsParameters] GetGamesDto request) =>
+            [AsParameters] GetGamesDto request,
+            CdnUrlTransformer cdnUrlTransformer) =>
         {
             var skipCount = (request.PageNumber - 1) * request.PageSize;
 
@@ -29,7 +31,7 @@ public static class GetGamesEndpoint
                                     game.Genre!.Name,
                                     game.Price,
                                     game.ReleaseDate,
-                                    game.ImageUri,
+                                    cdnUrlTransformer.TransformToCdnUrl(game.ImageUri),
                                     game.LastUpdatedBy
                                 ))
                                 .AsNoTracking()
@@ -37,7 +39,7 @@ public static class GetGamesEndpoint
 
             var totalGames = await filteredGames.CountAsync();
             var totalPages = (int)Math.Ceiling(totalGames / (double)request.PageSize);
-            
+
             return new GamesPageDto(totalPages, gamesOnPage);
         })
         .AllowAnonymous();
