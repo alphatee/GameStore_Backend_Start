@@ -1,12 +1,14 @@
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\appsettings.json
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.staticwebassets.runtime.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.staticwebassets.endpoints.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.exe
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.deps.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.runtimeconfig.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.pdb
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Core.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Common.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Humanizer.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -43,6 +45,7 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\n
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.ClientModel.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.CodeDom.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -50,6 +53,8 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\n
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Memory.Data.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -130,6 +135,7 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\n
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.csproj.CoreCompileInputs.cache
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.sourcelink.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -144,10 +150,3 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\n
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.pdb
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.genruntimeconfig.cache
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\ref\GameStore.Api.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Core.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Blobs.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Common.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.ClientModel.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.IO.Hashing.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Debug\net8.0\System.Memory.Data.dll
-C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.sourcelink.json
