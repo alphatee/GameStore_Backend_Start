@@ -145,3 +145,9 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\GameStore.Api.genruntimeconfig.cache
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\ref\GameStore.Api.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\GameStore.Api.sourcelink.json
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\Azure.Core.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\Azure.Storage.Blobs.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\Azure.Storage.Common.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\System.ClientModel.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\System.IO.Hashing.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\bin\Release\net8.0\System.Memory.Data.dll

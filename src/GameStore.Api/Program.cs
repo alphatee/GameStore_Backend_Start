@@ -30,8 +30,7 @@ builder.Services.AddHttpLogging(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpContextAccessor()
-                .AddSingleton<FileUploader>();
+builder.AddFileUploader();
 
 builder.AddGameStoreAuthentication();
 builder.AddGameStoreAuthorization();
@@ -40,8 +39,6 @@ builder.Services.AddSingleton<IAuthorizationHandler, BasketAuthorizationHandler>
 builder.AddGameStoreCors();
 
 var app = builder.Build();
-
-app.UseStaticFiles();
 
 app.UseCors();
 

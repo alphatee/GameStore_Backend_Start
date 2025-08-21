@@ -4,7 +4,11 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\appsettings.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\GameStore.Api.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\GameStore.Api.runtimeconfig.json
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\GameStore.Api.pdb
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Azure.Core.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Azure.Storage.Blobs.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Azure.Storage.Common.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Bcl.AsyncInterfaces.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Data.Sqlite.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFrameworkCore.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -32,7 +36,10 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\SQLitePCLRaw.provid
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Swashbuckle.AspNetCore.Swagger.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\System.ClientModel.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\System.IdentityModel.Tokens.Jwt.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\System.IO.Hashing.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\System.Memory.Data.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\runtimes\linux-arm\native\libe_sqlite3.so
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\runtimes\linux-arm64\native\libe_sqlite3.so
