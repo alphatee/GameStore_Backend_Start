@@ -1,0 +1,3 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/b25caa71-0f96-4744-b0bb-ae3ccf52d6cd/resourceGroups/rg-gamestore-dev-westus2-01/providers/Microsoft.Web/sites/app-gamestore-be-dev-westus2-01"
+}
