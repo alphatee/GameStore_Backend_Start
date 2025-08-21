@@ -144,3 +144,4 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\GameStore.Api.pdb
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\GameStore.Api.genruntimeconfig.cache
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\ref\GameStore.Api.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\src\GameStore.Api\obj\Release\net8.0\GameStore.Api.sourcelink.json
