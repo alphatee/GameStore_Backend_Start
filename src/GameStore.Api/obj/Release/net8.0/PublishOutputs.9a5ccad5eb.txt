@@ -15,6 +15,7 @@ C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFra
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFrameworkCore.Relational.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Extensions.Azure.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Extensions.Caching.Memory.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Extensions.DependencyInjection.dll
 C:\projects\Bootcamp\Azure\GameStore_Backend_Start\published\Microsoft.Extensions.DependencyInjection.Abstractions.dll
