@@ -13,6 +13,6 @@ public class KeycloakClaimsTransformer(
 
         identity?.TransformScopeClaim(GameStoreClaimTypes.Scope);
         identity?.MapUserIdClaim(JwtRegisteredClaimNames.Sub);
-        context.Principal?.LogAllClaims(logger);
+        context.Principal?.LogAllClaims(logger);        
     }
 }

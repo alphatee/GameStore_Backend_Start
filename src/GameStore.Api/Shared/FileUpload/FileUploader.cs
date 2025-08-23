@@ -1,11 +1,9 @@
-using System.Reflection.Metadata;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
 namespace GameStore.Api.Shared.FileUpload;
 
-public class FileUploader(
-    BlobServiceClient blobServiceClient)
+public class FileUploader(BlobServiceClient blobServiceClient)
 {
     public async Task<FileUploadResult> UploadFileAsync(
         IFormFile file,
@@ -43,7 +41,7 @@ public class FileUploader(
         await containerClient.CreateIfNotExistsAsync(PublicAccessType.Blob);
 
         var safeFileName = $"{Guid.NewGuid()}{fileExtension}";
-
+        
         var blobClient = containerClient.GetBlobClient(safeFileName);
         await blobClient.DeleteIfExistsAsync();
 

@@ -30,7 +30,7 @@ public static class CreateGameEndpoint
                 return Results.Unauthorized();
             }
 
-            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email)
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email) 
                                 ?? user?.FindFirstValue(GameStoreClaimTypes.UserId);
 
             if (string.IsNullOrEmpty(currentUserId))

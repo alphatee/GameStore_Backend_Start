@@ -1,9 +1,7 @@
-using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
 using GameStore.Api.Shared.Cdn;
-using Microsoft.Data.Sqlite;
 
 namespace GameStore.Api.Features.Games.GetGame;
 
