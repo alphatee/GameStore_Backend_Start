@@ -1,3 +1,4 @@
+using Azure.Identity;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Baskets;
 using GameStore.Api.Features.Baskets.Authorization;
@@ -17,8 +18,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddProblemDetails()
                 .AddExceptionHandler<GlobalExceptionHandler>();
 
-var connString = builder.Configuration.GetConnectionString("GameStore");
-builder.Services.AddSqlite<GameStoreContext>(connString);
+var credential = new DefaultAzureCredential(new DefaultAzureCredentialOptions
+{
+    ManagedIdentityClientId = builder.Configuration["AZURE_CLIENT_ID"]
+});
+
+builder.AddGameStoreNpgsql<GameStoreContext>("GameStoreDB", credential);
 
 builder.Services.AddHttpLogging(options =>
 {
@@ -32,7 +37,7 @@ builder.Services.AddHttpLogging(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.AddFileUploader();
+builder.AddFileUploader(credential);
 
 builder.AddGameStoreAuthentication();
 builder.AddGameStoreAuthorization();

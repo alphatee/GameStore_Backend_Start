@@ -39,7 +39,7 @@ public static class GetGamesEndpoint
 
             var totalGames = await filteredGames.CountAsync();
             var totalPages = (int)Math.Ceiling(totalGames / (double)request.PageSize);
-
+            
             return new GamesPageDto(totalPages, gamesOnPage);
         })
         .AllowAnonymous();

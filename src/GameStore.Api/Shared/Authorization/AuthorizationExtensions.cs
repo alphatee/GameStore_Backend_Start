@@ -11,7 +11,7 @@ public static class AuthorizationExtensions
     public static IHostApplicationBuilder AddGameStoreAuthentication(
         this IHostApplicationBuilder builder)
     {
-        var authBuilder = builder.Services.AddAuthentication(Schemes.Entra);
+        var authBuilder = builder.Services.AddAuthentication(Schemes.KeyCloakOrEntra);
 
         if (builder.Environment.IsDevelopment())
         {
@@ -54,8 +54,8 @@ public static class AuthorizationExtensions
                 OnTokenValidated = context =>
                 {
                     var transformer = context.HttpContext
-                                                .RequestServices
-                                                .GetRequiredService<EntraClaimsTransformer>();
+                                            .RequestServices
+                                            .GetRequiredService<EntraClaimsTransformer>();
                     transformer.Transform(context);
 
                     return Task.CompletedTask;
