@@ -1,3 +1,4 @@
+using Azure.Core;
 using GameStore.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,11 +6,51 @@ namespace GameStore.Api.Data;
 
 public static class DataExtensions
 {
+    private const string postgreSqlScope = "https://ossrdbms-aad.database.windows.net/.default";
+
     public static async Task InitializeDbAsync(this WebApplication app)
     {
         await app.MigrateDbAsync();
         await app.SeedDbAsync();
         app.Logger.LogInformation(18, "The database is ready!");
+    }
+
+    public static WebApplicationBuilder AddGameStoreNpgsql<TContext>(
+        this WebApplicationBuilder builder,
+        string connectionStringName,
+        TokenCredential credential
+    ) where TContext : DbContext
+    {
+        var connString = builder.Configuration.GetConnectionString(connectionStringName);
+
+        if (builder.Environment.IsDevelopment())
+        {
+            builder.Services.AddNpgsql<TContext>(connString);
+        }
+        else
+        {
+            builder.Services.AddNpgsql<TContext>(connString, dbContextOptionsBuilder =>
+            {
+                dbContextOptionsBuilder.ConfigureDataSource(dataSourceBuilder =>
+                {
+                    dataSourceBuilder.UsePeriodicPasswordProvider(
+                        async (_, cancellationToken) =>
+                        {
+                            var token = await credential.GetTokenAsync(
+                                new TokenRequestContext([postgreSqlScope]),
+                                cancellationToken
+                            );
+
+                            return token.Token;
+                        },
+                        TimeSpan.FromHours(24),
+                        TimeSpan.FromSeconds(10)
+                    );
+                });
+            });
+        }
+
+        return builder;
     }
 
     private static async Task MigrateDbAsync(this WebApplication app)

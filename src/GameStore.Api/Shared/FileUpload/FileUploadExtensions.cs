@@ -1,11 +1,13 @@
-using Azure.Identity;
+using Azure.Core;
 using Azure.Storage.Blobs;
 
 namespace GameStore.Api.Shared.FileUpload;
 
 public static class FileUploadExtensions
 {
-    public static void AddFileUploader(this WebApplicationBuilder builder)
+    public static void AddFileUploader(
+        this WebApplicationBuilder builder,
+        TokenCredential credential)
     {
         builder.Services.AddSingleton(serviceProvider =>
                         {
@@ -19,10 +21,7 @@ public static class FileUploadExtensions
                                 new BlobServiceClient(connectionString) :
                                 new BlobServiceClient(
                                     new Uri(connectionString),
-                                    new DefaultAzureCredential(new DefaultAzureCredentialOptions
-                                    {
-                                        ManagedIdentityClientId = config["AZURE_CLIENT_ID"]
-                                    }));
+                                    credential);
                         })
                         .AddSingleton<FileUploader>();
     }
